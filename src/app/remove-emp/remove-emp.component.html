@@ -1,0 +1,27 @@
+<div class="container p-3 my-3 bg-dark text-white text-center">
+  <h1>All the employee will be shown here </h1>
+  <p>please click on delete to remove</p>
+</div>
+
+<div class="container mt-5">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Salary</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let obj of emp">
+        <td>{{obj.name}}</td>
+        <td>{{obj.email}}</td>
+        <td>{{obj.designation}}</td>
+        <td>{{obj.salary}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="remove(obj.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

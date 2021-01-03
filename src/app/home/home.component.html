@@ -1,0 +1,38 @@
+<div class="container p-3 my-3 bg-dark text-white text-center">
+  <h1>Welcome To Employee Management system</h1>
+  <p>A crud application for Employe Management</p>
+  <img src="../../assets/img/back.jpeg" >
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <h3 class="mt-3 mb-3">The term Employee Management System is a platform where you can manage the employees like adding,removing and finding them</h3>
+    <div class="col-sm-4">
+      <div>
+      <h3>Add Employee</h3>
+      <p>click on the button and fill up all the required information</p>
+      </div>
+      <button type="button" class="btn btn-primary" [routerLink]="['/add']" routerLinkActive="router-link-active" >Add</button>
+    </div>
+
+    <div class="col-sm-4">
+      <div>
+      <h3>Remove Employee</h3>
+      <p>Improve you buisness publicity and productivity with the attractive and prescribed webbapps</p>
+      <p>Good Quality webbapps for you buisness devlopment</p>
+    </div>
+      <button type="button" class="btn btn-danger"  [routerLink]="['/remove']" routerLinkActive="router-link-active" >Remove</button>
+    </div>
+
+    <div class="col-sm-4">
+    <div>
+      <h3>Find Employee</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+      <button type="button" class="btn btn-info" [routerLink]="['/find']" routerLinkActive="router-link-active" >Find</button>
+    </div>
+  </div>
+</div>
+
