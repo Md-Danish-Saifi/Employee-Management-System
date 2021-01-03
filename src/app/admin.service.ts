@@ -27,4 +27,9 @@ export class AdminService {
   {
     return this.http.get("http://localhost:8080/find/"+name);
   }
+
+  public verifyEmail(token)
+  {
+    return this.http.get("http://localhost:8080/confirm-account/?token="+token,{responseType:"text" as "json"});
+  }
 }

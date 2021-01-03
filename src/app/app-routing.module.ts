@@ -1,3 +1,4 @@
+import { VerifyComponent } from './verify/verify.component';
 import { FindEmpComponent } from './find-emp/find-emp.component';
 import { RemoveEmpComponent } from './remove-emp/remove-emp.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
@@ -8,11 +9,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes =
 [
-  {pathMatch:"full",path:"",redirectTo:"home"},
+  {pathMatch:"full",path:"",redirectTo:'home'},
   {path: 'home', component: HomeComponent },
   {path:'add',component:AddEmpComponent},
   {path:'remove',component:RemoveEmpComponent},
-  {path:'find',component:FindEmpComponent}
+  {path:'find',component:FindEmpComponent},
+  {path:"verify",component:VerifyComponent
+}
 ];
 
 @NgModule({

@@ -8,6 +8,7 @@ import { AddEmpComponent } from './add-emp/add-emp.component';
 import { RemoveEmpComponent } from './remove-emp/remove-emp.component';
 import { FindEmpComponent } from './find-emp/find-emp.component';
 import { FormsModule } from '@angular/forms';
+import { VerifyComponent } from './verify/verify.component';
 HttpClientModule
 FormsModule
 
@@ -17,7 +18,8 @@ FormsModule
     HomeComponent,
     AddEmpComponent,
     RemoveEmpComponent,
-    FindEmpComponent
+    FindEmpComponent,
+    VerifyComponent
   ],
   imports: [
     HttpClientModule,
